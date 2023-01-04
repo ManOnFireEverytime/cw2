@@ -3,7 +3,7 @@ var app = new Vue({
   data: {
     lessons: [],
   },
-  created() {
+  created: function () {
     fetch("http://localhost:3000/lessons")
       .then((response) => response.json())
       .then((lessons) => {
