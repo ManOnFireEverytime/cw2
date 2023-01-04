@@ -11,5 +11,9 @@ app.get("/lessons", (req, res) => {
 
   res.json(lessons);
 });
+app.get("/user", (req, res) => {
+  var user = { email: "user@email.com", password: "mypassword" };
 
+  res.json(user);
+});
 app.listen(3000, () => console.log("Server listening on port 3000"));
