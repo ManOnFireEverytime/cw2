@@ -1,5 +1,8 @@
 var express = require("express");
 var app = express();
+var cors = require("cors");
+
+app.use(cors());
 app.get("/lessons", (req, res) => {
   // Retrieve list of lessons from database or other source
   var lessons = [
