@@ -3,6 +3,7 @@ var app = express();
 var cors = require("cors");
 
 app.use(cors());
+app.set("json spaces", 3);
 app.get("/lessons", (req, res) => {
   // Retrieve list of lessons from database or other source
   var lessons = [
